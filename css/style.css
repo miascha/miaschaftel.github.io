@@ -669,8 +669,6 @@ footer {
         padding-left: 5em;
         padding-right: 5em;
         margin-bottom: 5px;
-        animation-name: dissolve-in;
-        animation-duration: 3s;
     }
     
     .mia:hover {
@@ -678,6 +676,12 @@ footer {
         margin-bottom: 10px;
         transform: scale(1.04);
         transition-duration: 250ms;
+    }
+
+    .first-page-load {
+        animation-name: dissolve-in;
+        animation-duration: 3s;
+        background-color: #CEE7E6;
     }
 
     /* NAV BAR CSS */
@@ -801,23 +805,10 @@ footer {
         margin-bottom: 0px;
     }
 
-    #dp1-text {
-        animation-name: dissolve-in;
-        animation-duration: 3s;
+    #dp1-text, #ghp-text, #dp2-text {
         background-color: #CEE7E6;
     }
 
-    #ghp-text {
-        animation-name: dissolve-in;
-        animation-duration: 3s;
-        background-color: #CEE7E6;
-    }
-
-    #dp2-text {
-        animation-name: dissolve-in;
-        animation-duration: 3s;
-        background-color: #CEE7E6;
-    }
 
     /* ABOUT PAGE CSS */
     
@@ -973,8 +964,6 @@ footer {
     }
 
     footer {
-        animation-name: dissolve-in;
-        animation-duration: 3s;
         background-color: #CEE7E6;
     }
 
@@ -1201,20 +1190,12 @@ footer {
         display: block;
     }
 
-    .mia {
+    .first-page-load {
         animation-name: none;
     }
 
     input[type=submit]:hover {
         animation-name:none;
-    }
-
-    #dp1-text, #ghp-text, #dp2-text {
-        animation-name: none;
-    }
-
-    footer {
-        animation-name: none;
     }
 }
 
