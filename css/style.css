@@ -654,15 +654,6 @@ footer {
     to {color: #CEE7E6;}
 }
 
-@media only screen and (min-width: 576px){
-   
-    .menu-bar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-}
 
 @media only screen and (min-width: 768px){
     #mobile-screen-nav {
@@ -746,8 +737,6 @@ footer {
     }
 
     #full-screen-nav .current {
-        animation-name: text-dissolve-in;
-        animation-duration: 3s;
         color: #CEE7E6;
         background-color: #333;
         text-decoration: underline;
@@ -755,6 +744,11 @@ footer {
         padding-right: 10px;
         padding-top: 1px;
         padding-bottom: 1px;
+    }
+
+    .nav-anim{
+        animation-name: text-dissolve-in;
+        animation-duration: 3s;
     }
 
     nav ul {
