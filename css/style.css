@@ -673,7 +673,7 @@ footer {
         transition-duration: 250ms;
     }
 
-    .first-page-load, footer {
+    .first-page-load {
         animation-name: dissolve-in;
         animation-duration: 3s;
         background-color: #cee7e6e5;
