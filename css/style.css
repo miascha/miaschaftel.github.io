@@ -359,9 +359,9 @@ input[type=text], select, textarea, input[type=email] {
     cursor: pointer;
   }
   
-  /* input[type=submit]:hover {
-    background-color: #CEE7E6;
-  } */
+  input[type=submit]:hover {
+    background-color: #cee7e6e5;
+  }
   
   /* Add a background color and some padding around the form */
   .form {
@@ -527,7 +527,7 @@ input[type=text], select, textarea, input[type=email] {
     margin-left: 1em;
 }
 
-/* .prototype div{
+.prototype div{
     margin-left: 47px;
     margin-right: 30px;
 }
@@ -540,7 +540,7 @@ input[type=text], select, textarea, input[type=email] {
     margin: auto;
     display: block;
     margin-bottom: 40px;
-} */
+}
 
 /* GHP PAGE CSS */
 
@@ -639,11 +639,6 @@ footer {
     object-fit: cover;
 }
 
-@keyframes background-color-changer {
-    from {background-color: #e9e94a9a;}
-    to {background-color: #CEE7E6;}
-}
-
 @keyframes dissolve-in {
     from {background-color: #ffff00;}
     to {background-color: #CEE7E6;}
@@ -678,15 +673,15 @@ footer {
         transition-duration: 250ms;
     }
 
-    .first-page-load {
+    .first-page-load, footer {
         animation-name: dissolve-in;
         animation-duration: 3s;
-        background-color: #CEE7E6;
+        background-color: #cee7e6e5;
     }
 
     /* NAV BAR CSS */
     nav a:hover {
-        background-color: #CEE7E6;
+        background-color: #cee7e6e5;
     }
 
     /* Dropdown Button */
@@ -724,7 +719,7 @@ footer {
     
     /* Change color of dropdown links on hover */
     .dropdown-content a:hover {
-        background-color: #CEE7E6;
+        background-color: #cee7e6e5;
         color: #333;
         text-decoration: underline;
     }
@@ -736,12 +731,12 @@ footer {
     
     /* Change the background color of the dropdown button when the dropdown content is shown */
     .dropdown:hover .dropbtn {
-        background-color: #CEE7E6;
+        background-color: #cee7e6e5;
         text-decoration: underline;
     }
 
     #full-screen-nav .current {
-        color: #CEE7E6;
+        color: #cee7e6e5;
         background-color: #333;
         text-decoration: underline;
         padding-left: 10px;
@@ -761,7 +756,7 @@ footer {
     }
 
     nav a:active {
-        background-color: #CEE7E6;
+        background-color: #cee7e6e5;
         text-decoration: underline;
     } 
 
@@ -806,7 +801,7 @@ footer {
     }
 
     #dp1-text, #ghp-text, #dp2-text {
-        background-color: #CEE7E6;
+        background-color: #cee7e6e5;
     }
 
 
@@ -836,7 +831,7 @@ footer {
     }
     
     .courses ul li a:hover {
-        background-color: #CEE7E6;
+        background-color: #cee7e6e5;
     }
 
     .connect-area {
@@ -847,11 +842,6 @@ footer {
         margin-bottom: 50px;
         margin-top: 0px;
     } 
-
-    input[type=submit]:hover {
-        animation: background-color-changer 2s;
-        background-color: #CEE7E6;
-    }
 
     .form {
         margin: auto;
@@ -941,9 +931,9 @@ footer {
         width: 200px;
     }
 
-    /* .prototype div{
+    .prototype div{
         margin-left: 100px;
-    } */
+    }
 
     /* GHP PAGE CSS */
 
@@ -964,7 +954,7 @@ footer {
     }
 
     footer {
-        background-color: #CEE7E6;
+        background-color: #cee7e6e5;
     }
 
 }
@@ -979,6 +969,10 @@ footer {
 
 
     /* ABOUT PAGE CSS */
+
+    .headshot {
+        width: 400px;
+    }
 
     .courses {
         flex-direction: row;
