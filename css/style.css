@@ -1133,6 +1133,15 @@ footer {
     
 }
 
+@media only screen and (min-width: 1024px){
+    /* HOMEPAGE CSS */
+    
+    .home-container {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
 
 @media (prefers-reduced-motion) { 
     .mia:hover {
