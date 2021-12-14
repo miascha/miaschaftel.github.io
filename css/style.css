@@ -495,7 +495,18 @@ input[type=text], select, textarea, input[type=email] {
 }
 
 .dp1sketches-img {
-    width: 150px;
+    width: 8em;
+}
+
+.dp2-images img {
+    width: 9em;
+}
+
+.dp2-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .wireframing-description p {
@@ -616,9 +627,10 @@ input[type=text], select, textarea, input[type=email] {
 .GHP-logos-new {
     padding: 20px;
     border: 7px solid;
-    border-image: linear-gradient(45deg, #ffff00, rgb(255, 222, 9)) 1;
+    border-image: linear-gradient(315deg, #ffff00, rgb(255, 222, 9)) 1;
     margin-bottom: 15px;
 }
+
 
 /* FOOTER CSS */
 
@@ -913,6 +925,13 @@ footer {
         margin-right: 50px;
     }
 
+    .dp2-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
     .dp1sketches-search {
         margin-top: -20px;
         margin-left: 30px;
@@ -1066,15 +1085,31 @@ footer {
 
     /* PROJECTS CSS */
 
+    #main h2 {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+
     #main img {
         margin-bottom: 15px;
     }
 
-    .skills {
-        position: absolute;
-        margin-left: 400px;
-        margin-right: 250px;
-        margin-top: -380px;
+    .description {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1.2em;
+    }
+
+    .problem-state {
+        grid-column: 1 /  -1;
+    }
+
+    .description-description {
+        grid-column: 1 / -1;
+    }
+
+    .tools {
+        grid-column: 2 / -1;
     }
 
     .dp1sketches-search {
@@ -1083,26 +1118,32 @@ footer {
     }
 
     .dp1-images img {
+        margin-top: 15px;
+        margin-bottom: 15px;
         margin-left: none;
         margin-right: none;
+        width: 8.2em;
     }
 
     .dp1-images img:hover {
-        transform: scale(1.05);
+        transform: scale(1.4);
         border: 4px solid;
         border-image: linear-gradient(45deg, #ffff00, rgb(255, 222, 9)) 1;
-
     }
 
-    .c-skills {
-        margin-top: -1360px;
+    .dp1-images img {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 8em;
+    }
+
+    .dp2-images img:hover {
+        transform: scale(1.4);
+        border: 4px solid;
+        border-image: linear-gradient(45deg, #ffff00, rgb(255, 222, 9)) 1;
     }
 
     /* GHP PAGE CSS */
-
-    .ghp-skills {
-        margin-top: -820px;
-    }
 
     .GHP-logo-before-and-after h3,
     .GHP-logo-before-and-after p {
@@ -1170,6 +1211,11 @@ footer {
     }
 
     .dp1-images img:hover {
+        transform: none;
+        border: none;
+    }
+
+    .dp2-images img:hover {
         transform: none;
         border: none;
     }
