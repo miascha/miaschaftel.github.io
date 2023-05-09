@@ -28,6 +28,7 @@ p {
 nav {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 #full-screen-nav {
@@ -51,6 +52,21 @@ nav {
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.mias {
+    font-size: 6.1em;
+    margin: auto;
+    margin-bottom: 80px;
+    background-color: #e3dbd7;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+    
 }
 
 /* NAV BAR CSS */
@@ -82,8 +98,6 @@ nav a:hover {
 }
 
 .menu-bar .current {
-    color: #e3dbd7;
-    background-color: #333;
     text-decoration: underline;
 }
 
@@ -105,8 +119,8 @@ nav a:hover {
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 70px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .projectgrid {
@@ -117,8 +131,8 @@ nav a:hover {
     align-items: center;
     margin-top: 20px;
     margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 40px;
+    margin-right: 20px;
 }
 
 .gallery img {
@@ -127,7 +141,7 @@ nav a:hover {
     width: 250px;
 }
 
-.dp1-grid-text, .ghp-grid-text, .dp2-grid-text {
+.dp1-grid-text, .ghp-grid-text, .dp2-grid-text, .cc-grid-text, .si-grid-text {
     padding: 25px;
 }
 
@@ -135,27 +149,15 @@ nav a:hover {
     display: none;
 }
   
-.dp1-grid:hover{
+.dp1-grid:hover, .ghp-grid:hover, .dp2-grid:hover, .cc-grid:hover, .si-grid:hover {
     transform: scale(1.03); 
     transition-duration: .4s;
     box-shadow: 0px 0px 16px 0px rgba(186,186,186.33);
     border-radius: 20px;
 }
 
-  
-.ghp-grid:hover{
-    transform: scale(1.03); 
-    transition-duration: .4s;
-    box-shadow: 0px 0px 16px 0px rgba(186,186,186.33);
-    border-radius: 20px;
-}
-
-  
-.dp2-grid:hover{
-    transform: scale(1.03); 
-    transition-duration: .4s;
-    box-shadow: 0px 0px 16px 0px rgba(186,186,186.33);
-    border-radius: 20px;
+.ghp-grid-item {
+    margin-left: 40px;
 }
 
 /* ABOUT PAGE CSS */
@@ -517,8 +519,6 @@ footer {
     }
 
     #full-screen-nav .current {
-        color: #e3dbd7;
-        background-color: #333;
         text-decoration: underline;
         padding-left: 10px;
         padding-right: 10px;
@@ -572,51 +572,74 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        grid-column-gap: 5px;
+        grid-column-gap: 15px;
     }
 
-    .dp1-grid-item {
+    .cc-grid-item {
         grid-column-start: 1;
         grid-column-end: 2;
     }
 
-    .dp1-grid-text {
+    .cc-grid-text {
         grid-column-start: 2;
         grid-column-end: -1;
     }
-    
-    .ghp-grid-text-large {
+
+    .si-grid-text {
         display: inline;
         grid-column: 1 / span 1;
         grid-row: 2 / span 1;
     }
 
-    .ghp-grid-text {
-        display: none;
-    }
-
-    .ghp-grid-item {
+    .si-grid-item {
         grid-column: 2 / span 1;
         /* grid-column-end: 2; */
         grid-row: 2 / span 1;
 
     }
 
-    
-
     .dp2-grid-item {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row: 3 / span 1;
-
     }
 
     .dp2-grid-text {
         grid-column-start: 2;
         grid-column-end: -1;
+        grid-row: 3 / span 1;
+    }
+    
+    .ghp-grid-text-large {
+        display: inline;
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
     }
 
-    .dp1-grid-item:hover, .dp2-grid-item:hover, .ghp-grid-item:hover {
+    .ghp-grid-text {
+        display: none;
+    }
+    
+    .ghp-grid-item {
+        grid-column: 2 / span 1;
+        /* grid-column-end: 2; */
+        grid-row: 4 / span 1;
+
+    }
+
+    .dp1-grid-item {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row: 5 / span 1;
+
+    }
+
+    .dp1-grid-text {
+        grid-column-start: 2;
+        grid-column-end: -1;
+    }
+
+    .dp1-grid-item:hover, .dp2-grid-item:hover, .ghp-grid-item:hover, .cc-grid-item:hover, .si-grid-item:hover {
         transform: scale(1.03); 
         transition-duration: .4s;
         box-shadow: 0px 0px 16px 0px rgba(186,186,186.33);
@@ -920,5 +943,4 @@ footer {
         transform: none;
     }
 }
-
 
