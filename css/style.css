@@ -40,12 +40,12 @@ nav {
 }
 
 .mia{
-    font-size: 2.1em;
+    font-size: 4.1em;
     margin-top: 20px;
     font-family: arial;
     font-weight: 600;
-    background-color: #e3dbd7;
-    color: #333;
+    background-color: #dadada6a;
+    color: #d2cac7;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -58,15 +58,14 @@ nav {
     font-size: 6.1em;
     margin: auto;
     margin-bottom: 80px;
-    background-color: #e3dbd7;
+    background-color: #dadada6a;
     font-family: 'Playfair Display', sans-serif;
     font-weight: 600;
-    color: #333;
+    color: #d2cac7;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    letter-spacing: 2px;
-    
+    letter-spacing: 2px;   
 }
 
 /* NAV BAR CSS */
@@ -86,15 +85,15 @@ nav li {
 }
 
 nav a {
-    color: #333;
+    color: #000;
     text-decoration: none; 
     padding-left: 10px;
     padding-right: 10px;
 }
   
 nav a:hover {
-    background-color: #e3dbd7;
-    color: #333;
+    background-color: #d2cac7;
+    color: #000;
 }
 
 .menu-bar .current {
@@ -103,12 +102,16 @@ nav a:hover {
 
 .navbar-toggler {
     margin-top: 10px;
-    background-color: #e3dbd7;
+    background-color: #d2cac7;
 }
 
 .navbar-collapse {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.mia:hover{
+    text-decoration: none;
 }
 
 /* HOMEPAGE CSS */
@@ -425,8 +428,8 @@ nav a:hover {
 /* FOOTER CSS */
 
 footer {
-    background-color: #e3dbd7;
-    color: #333;
+    background-color: #dadada6a;
+    color: #000;
     font-weight: bolder;
     font-size: 1em;
     padding: 15px;
@@ -452,7 +455,7 @@ footer {
     }
 
     .mia {
-        background-color: #e3dbd7;
+        background-color: #dadada6a;
         padding-left: 5em;
         padding-right: 5em;
         margin-bottom: 5px;
@@ -462,13 +465,13 @@ footer {
 
     /* NAV BAR CSS */
     nav a:hover {
-        background-color: #e3dbd7;
+        background-color: #dadada6a;
     }
 
     /* Dropdown Button */
     .dropbtn {
         background-color: #fff;
-        color: #333;
+        color: #000;
         padding-left: 15px;
         padding-right: 15px;
         border: none;
@@ -494,7 +497,7 @@ footer {
     
     /* Links inside the dropdown */
     .dropdown-content a {
-        color: #333;
+        color: #000;
         padding: 5px 15px;
         text-decoration: none;
         display: block;
@@ -502,8 +505,8 @@ footer {
     
     /* Change color of dropdown links on hover */
     .dropdown-content a:hover {
-        background-color: #e3dbd7;
-        color: #333;
+        background-color: #d2cac7;
+        color: #000;
         text-decoration: underline;
     }
     
@@ -514,7 +517,7 @@ footer {
     
     /* Change the background color of the dropdown button when the dropdown content is shown */
     .dropdown:hover .dropbtn {
-        background-color: #e3dbd7;
+        background-color: #d2cac7;
         text-decoration: underline;
     }
 
@@ -532,7 +535,7 @@ footer {
     }
 
     nav a:active {
-        background-color: #e3dbd7;
+        background-color: #d2cac7;
         text-decoration: underline;
     } 
 
@@ -543,7 +546,7 @@ footer {
     /* SKIP TO CONTENT CSS */
     .skip a{
         display: block;
-        color: #333;       
+        color: #000;       
         left: 0;
         padding: 6px;
         -webkit-transition: top 1s ease-out;
@@ -565,7 +568,7 @@ footer {
     }
 
     .gallery img {
-        width: 250px;
+        width: 300px;
     }
 
     .projectgrid {
@@ -624,7 +627,6 @@ footer {
         grid-column: 2 / span 1;
         /* grid-column-end: 2; */
         grid-row: 4 / span 1;
-
     }
 
     .dp1-grid-item {
@@ -697,19 +699,19 @@ footer {
     }
     
     .courses li a {
-        color: #333;
+        color: #000;
         text-decoration: none;
     }
     
     .courses ul li a:hover {
-        background-color: #e3dbd7;
-        color: #333;
+        background-color: #d2cac7;
+        color: #000;
         padding-right: 30px;
         text-decoration-line: underline;
     }
     
     .courses li a:visited {
-        color: #333;
+        color: #000;
     }
 
     /* PROJECTS CSS */
@@ -789,7 +791,7 @@ footer {
 
 
     footer {
-        background-color: #e3dbd7;
+        background-color: #dadada6a;
     }
 
 }
