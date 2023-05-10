@@ -5,7 +5,6 @@ html{
 body{
   font-size: 1.25em;
   font-family: sans-serif;
-    /* font-family: pt-sans-pro, "Avante Garde Gothic", sans-serif; */
   font-weight: 300;
   font-style: normal;
   background-color: #fff;
@@ -15,7 +14,6 @@ body{
 h1, h2 {
     color: #000;
     font-family: sans-serif;
-    /* font-family: pt-sans-pro, "Avante Garde Gothic", sans-serif; */
     font-weight: 300;
     font-style: normal;
     font-size: 1.25em;
@@ -59,7 +57,7 @@ nav {
     margin: auto;
     margin-bottom: 80px;
     background-color: #dadada6a;
-    font-family: 'Playfair Display', sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 600;
     color: #d2cac7;
     text-align: center;
